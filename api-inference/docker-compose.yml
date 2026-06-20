@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  inference-api:
+    build: .
+    container_name: ml_inference_container
+    ports:
+      - "8000:8000"
+    restart: always
+  
